@@ -1,0 +1,713 @@
+/* =====================================================
+   CLIENTS PAGE
+===================================================== */
+
+.clients-page {
+  min-height: 100vh;
+  background: #050608;
+  color: #ffffff;
+
+  padding: 70px 5% 40px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CLIENTS HERO
+===================================================== */
+
+.clients-hero {
+  text-align: center;
+
+  max-width: 900px;
+
+  margin: 0 auto 45px;
+}
+
+
+.clients-small-title {
+  display: block;
+
+  color: #ff8500;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
+}
+
+
+.clients-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 46px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+.clients-hero h1 span {
+  color: #ff8500;
+}
+
+
+.clients-hero p {
+  color: #bcbcbc;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  margin-top: 20px;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.clients-divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 18px auto;
+}
+
+
+.clients-divider span {
+  display: block;
+
+  width: 85px;
+
+  height: 2px;
+
+  background: #ff8500;
+}
+
+
+.clients-divider svg {
+  color: #ff8500;
+
+  font-size: 22px;
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.client-stats {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto 45px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+.client-stat-card {
+  min-height: 90px;
+
+  border: 1px solid #2a2d31;
+
+  border-radius: 9px;
+
+  background: #0b0d10;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 18px 22px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+
+.client-stat-card:hover {
+  border-color: #ff8500;
+
+  transform: translateY(-4px);
+}
+
+
+.client-stat-icon {
+  color: #ff8500;
+
+  font-size: 35px;
+
+  min-width: 60px;
+}
+
+
+.client-stat-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 27px;
+
+  font-weight: 800;
+}
+
+
+.client-stat-content p {
+  margin: 4px 0 0;
+
+  color: #bdbdbd;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   TESTIMONIAL SECTION
+===================================================== */
+
+.testimonials-section {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   TESTIMONIAL HEADING
+===================================================== */
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+
+/*
+   IMPORTANT:
+   No orange span here.
+   "What Our Members Say" is completely WHITE.
+*/
+
+
+.heading-line {
+  width: 45px;
+
+  height: 3px;
+
+  background: #ff8500;
+
+  margin: 12px auto 0;
+}
+
+
+/* =====================================================
+   TESTIMONIAL GRID
+===================================================== */
+
+.testimonial-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+.testimonial-card {
+  min-height: 250px;
+
+  background: #0c0e11;
+
+  border: 1px solid #2a2d31;
+
+  border-radius: 8px;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition: 0.3s ease;
+}
+
+
+.testimonial-card:hover {
+  border-color: #ff8500;
+
+  transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+.testimonial-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.stars {
+  display: flex;
+
+  gap: 4px;
+
+  color: #ff8500;
+
+  font-size: 17px;
+}
+
+
+.quote-icon {
+  color: #ff8500;
+
+  font-size: 24px;
+}
+
+
+/* =====================================================
+   TESTIMONIAL TEXT
+===================================================== */
+
+.testimonial-text {
+  color: #d1d1d1;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  margin: 20px 0;
+
+  flex: 1;
+}
+
+
+/* =====================================================
+   CLIENT PROFILE
+===================================================== */
+
+.client-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: auto;
+}
+
+
+.client-profile img {
+  width: 55px;
+
+  height: 55px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 2px solid #ff8500;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+
+.client-info {
+  min-width: 0;
+}
+
+
+.client-info h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+.client-info p {
+  margin: 4px 0 0;
+
+  color: #ff8500;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   FITNESS BRANDS
+===================================================== */
+
+.brands-section {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.brand-logo {
+  min-height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #777777;
+
+  font-weight: 800;
+
+  font-size: 18px;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+}
+
+
+.brand-logo:hover {
+  color: #ff8500;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.clients-cta {
+  width: 100%;
+
+  max-width: 1140px;
+
+  margin: 30px auto 0;
+
+  min-height: 95px;
+
+  padding: 20px 30px;
+
+  border: 1px solid #292d32;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0c1117,
+      #101820
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  box-sizing: border-box;
+}
+
+
+.cta-client-icon {
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+
+  color: #111111;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+
+  flex-shrink: 0;
+}
+
+
+.clients-cta-content {
+  flex: 1;
+}
+
+
+.clients-cta-content h2 {
+  margin: 0 0 7px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+}
+
+
+.clients-cta-content h2 span {
+  color: #ff8500;
+}
+
+
+.clients-cta-content p {
+  margin: 0;
+
+  color: #bcbcbc;
+
+  font-size: 15px;
+}
+
+
+.clients-join-btn {
+  min-width: 145px;
+
+  padding: 14px 22px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  transition: 0.3s ease;
+}
+
+
+.clients-join-btn:hover {
+  background: #ff9b2f;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .clients-page {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+
+  .client-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .brands-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .clients-page {
+    padding: 50px 20px 30px;
+  }
+
+
+  .clients-hero {
+    margin-bottom: 35px;
+  }
+
+
+  .clients-small-title {
+    font-size: 15px;
+  }
+
+
+  .clients-hero h1 {
+    font-size: 32px;
+  }
+
+
+  .clients-hero p {
+    font-size: 14px;
+  }
+
+
+  .clients-hero p br {
+    display: none;
+  }
+
+
+  .clients-divider span {
+    width: 55px;
+  }
+
+
+  .client-stats {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .client-stat-card {
+    padding: 16px;
+  }
+
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+
+
+  .brands-section {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+
+  .brand-logo {
+    font-size: 15px;
+  }
+
+
+  .clients-cta {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px 20px;
+  }
+
+
+  .clients-cta-content h2 {
+    font-size: 20px;
+  }
+
+
+  .clients-cta-content p {
+    font-size: 14px;
+  }
+
+
+  .clients-join-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .clients-hero h1 {
+    font-size: 28px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+
+  .client-profile img {
+    width: 50px;
+
+    height: 50px;
+  }
+
+}

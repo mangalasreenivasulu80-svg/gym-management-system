@@ -1,0 +1,523 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #050505;
+  color: white;
+  padding: 45px 6%;
+}
+
+
+/* ================= HEADER ================= */
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.contact-small-title {
+  color: #ff8500;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-header h1 {
+  margin: 0;
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.contact-header h1 span {
+  color: #ff8500;
+}
+
+.contact-header p {
+  color: #c5c5c5;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+.contact-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-divider span {
+  width: 55px;
+  height: 2px;
+  background: #ff8500;
+}
+
+.contact-divider strong {
+  color: #ff8500;
+  font-size: 25px;
+}
+
+
+/* ================= MAIN ================= */
+
+.contact-container {
+  max-width: 1220px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+
+  background: #101010;
+
+  border: 1px solid #292929;
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+
+/* ================= LEFT ================= */
+
+.contact-left {
+  padding: 12px;
+  border-right: 1px solid #292929;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 76px;
+
+  padding: 12px;
+
+  margin-bottom: 7px;
+
+  background: #121212;
+
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+.contact-card:hover {
+  border-color: #ff8500;
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff8500;
+
+  border-radius: 8px;
+
+  font-size: 23px;
+}
+
+.contact-card h3 {
+  margin: 0 0 5px;
+
+  font-size: 15px;
+}
+
+.contact-card p {
+  margin: 2px 0;
+
+  color: #bdbdbd;
+
+  font-size: 14px;
+}
+
+
+/* ================= MAP ================= */
+
+.contact-map {
+  width: 100%;
+  height: 260px;
+
+  margin-top: 8px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  border: 1px solid #292929;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  filter: grayscale(100%) brightness(0.65);
+}
+
+
+/* ================= RIGHT ================= */
+
+.contact-right {
+  padding: 35px 30px;
+}
+
+.message-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.message-title svg {
+  color: #ff8500;
+  font-size: 30px;
+}
+
+.message-title h2 {
+  margin: 0;
+
+  font-size: 25px;
+}
+
+.message-description {
+  color: #bdbdbd;
+
+  font-size: 15px;
+
+  margin: 15px 0 30px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+.input-box {
+  position: relative;
+
+  margin-bottom: 18px;
+}
+
+.input-box svg {
+  position: absolute;
+
+  left: 16px;
+  top: 21px;
+
+  color: #aaa;
+
+  z-index: 2;
+}
+
+.input-box input {
+  width: 100%;
+  height: 59px;
+
+  padding: 0 18px 0 47px;
+
+  background: #111;
+
+  border: 1px solid #333;
+
+  border-radius: 6px;
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #ff8500;
+}
+
+.input-box input::placeholder {
+  color: #999;
+}
+
+
+/* ================= SELECT ================= */
+
+.select-box {
+  margin-bottom: 18px;
+}
+
+.select-box select {
+  width: 100%;
+  height: 59px;
+
+  padding: 0 18px;
+
+  background: #111;
+
+  border: 1px solid #333;
+
+  border-radius: 6px;
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.select-box select:focus {
+  border-color: #ff8500;
+}
+
+.select-box option {
+  background: #111;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.textarea-box {
+  position: relative;
+
+  margin-bottom: 18px;
+}
+
+.textarea-box svg {
+  position: absolute;
+
+  top: 18px;
+  left: 17px;
+
+  color: #aaa;
+}
+
+.textarea-box textarea {
+  width: 100%;
+  height: 145px;
+
+  padding: 17px 18px 17px 47px;
+
+  background: #111;
+
+  border: 1px solid #333;
+
+  border-radius: 6px;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-family: inherit;
+
+  resize: none;
+
+  outline: none;
+}
+
+.textarea-box textarea:focus {
+  border-color: #ff8500;
+}
+
+.textarea-box textarea::placeholder {
+  color: #999;
+}
+
+
+/* ================= SEND BUTTON ================= */
+
+.send-button {
+  width: 100%;
+  height: 57px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #ff8500;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.send-button:hover {
+  background: #ff7200;
+}
+
+
+/* ================= BOTTOM ================= */
+
+.contact-bottom {
+  max-width: 1220px;
+
+  min-height: 110px;
+
+  margin: 18px auto 0;
+
+  padding: 20px 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background: #111;
+
+  border: 1px solid #292929;
+
+  border-radius: 14px;
+}
+
+.community-icon {
+  width: 70px;
+  height: 70px;
+
+  min-width: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff8500;
+
+  color: #080808;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.community-content {
+  flex: 1;
+}
+
+.community-content h2 {
+  margin: 0 0 7px;
+
+  font-size: 22px;
+}
+
+.community-content p {
+  margin: 0;
+
+  color: #bdbdbd;
+
+  font-size: 15px;
+}
+
+.join-button {
+  min-width: 205px;
+
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  background: transparent;
+
+  color: #ff8500;
+
+  border: 1px solid #ff8500;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background: #ff8500;
+
+  color: white;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    border-right: none;
+    border-bottom: 1px solid #292929;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .contact-page {
+    padding: 30px 4%;
+  }
+
+  .contact-header h1 {
+    font-size: 30px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+  }
+
+  .contact-header p br {
+    display: none;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right {
+    padding: 25px 18px;
+  }
+
+  .contact-bottom {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px 18px;
+  }
+
+  .join-button {
+    width: 100%;
+  }
+
+}

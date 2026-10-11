@@ -1,0 +1,578 @@
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.services-page {
+  min-height: 100vh;
+  background: #05070a;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+
+/* =========================================
+   SERVICES HERO
+========================================= */
+
+.services-hero {
+  position: relative;
+  min-height: 185px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 25px 12%;
+  background: #07090d;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+}
+
+.services-title h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.services-title h1 span {
+  color: #ff7800;
+}
+
+
+/* Title decoration */
+
+.title-decoration {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  width: 310px;
+}
+
+.title-decoration span {
+  height: 2px;
+  flex: 1;
+  background: #ff7800;
+}
+
+.title-decoration svg {
+  color: #ff7800;
+  font-size: 20px;
+}
+
+
+.services-hero-content > p {
+  max-width: 570px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eeeeee;
+}
+
+
+/* Right equipment image */
+
+.services-hero-equipment {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 52%;
+  height: 100%;
+
+  background-image:
+    linear-gradient(
+      to right,
+      #07090d 0%,
+      rgba(7, 9, 13, 0.65) 20%,
+      rgba(7, 9, 13, 0.05) 60%
+    ),
+    url("../assets/images/equipment/dumbbells.jpg");
+
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+
+/* =========================================
+   SERVICES CARDS
+========================================= */
+
+.services-section {
+  padding: 0 6.5%;
+  margin-top: -2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+
+.service-card {
+  position: relative;
+  min-height: 300px;
+
+  background: #080b10;
+  border: 1px solid #28313c;
+  border-radius: 12px;
+
+  padding: 0 11px 12px;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff7800;
+
+  box-shadow:
+    0 12px 35px rgba(255, 120, 0, 0.12);
+}
+
+
+/* Orange circle */
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+
+  margin: -3px auto 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ff7800;
+  color: #ffffff;
+
+  font-size: 25px;
+
+  box-shadow:
+    0 5px 18px rgba(255, 120, 0, 0.3);
+}
+
+
+.service-card h2 {
+  margin: 5px 0 8px;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+.service-card > p {
+  min-height: 62px;
+
+  margin: 0 auto 12px;
+
+  max-width: 270px;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #eeeeee;
+}
+
+
+/* Service image */
+
+.service-image {
+  width: 100%;
+  height: 132px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   EQUIPMENT SECTION
+========================================= */
+
+.equipment-section {
+  padding: 0 6.3%;
+  margin-top: 12px;
+}
+
+
+.equipment-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 5px;
+}
+
+
+.equipment-heading span {
+  width: 48px;
+  height: 2px;
+
+  background: #ff7800;
+}
+
+
+.equipment-heading h2 {
+  margin: 0;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+
+.equipment-heading strong {
+  color: #ff7800;
+}
+
+
+.equipment-subtitle {
+  margin: 0 0 2px;
+
+  text-align: center;
+
+  color: #c9c9c9;
+
+  font-size: 13px;
+}
+
+
+/* Equipment grid */
+
+.equipment-grid {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 6px;
+}
+
+
+.equipment-card {
+  min-height: 137px;
+
+  padding: 4px 8px 7px;
+
+  text-align: center;
+
+  background: #080b10;
+
+  border: 1px solid #28313c;
+
+  border-radius: 9px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.equipment-card:hover {
+  transform: translateY(-3px);
+  border-color: #ff7800;
+}
+
+
+.equipment-image {
+  width: 100%;
+  height: 77px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+.equipment-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+.equipment-card h3 {
+  margin: 1px 0 1px;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.equipment-card p {
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.25;
+
+  color: #dddddd;
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.services-cta {
+  margin: 12px 5% 0;
+
+  min-height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 30px;
+
+  border-radius: 10px;
+
+  border: 1px solid #174878;
+
+  background:
+    linear-gradient(
+      90deg,
+      #071727,
+      #0b233b
+    );
+
+  box-shadow:
+    inset 0 0 40px rgba(0, 100, 200, 0.08);
+}
+
+
+.cta-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+
+.cta-big-icon {
+  font-size: 50px;
+  line-height: 1;
+
+  filter:
+    drop-shadow(0 0 8px rgba(0, 120, 255, 0.3));
+}
+
+
+.cta-left h2 {
+  margin: 0 0 4px;
+
+  font-size: 22px;
+}
+
+
+.cta-left p {
+  margin: 0;
+
+  color: #dddddd;
+
+  font-size: 14px;
+}
+
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+
+.cta-join-btn,
+.cta-contact-btn {
+  height: 42px;
+
+  padding: 0 22px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+
+.cta-join-btn {
+  border: none;
+
+  background: #ff7800;
+
+  color: #ffffff;
+}
+
+
+.cta-join-btn:hover {
+  background: #ff8c1a;
+  transform: translateY(-2px);
+}
+
+
+.cta-contact-btn {
+  border: 1px solid #718096;
+
+  background: transparent;
+
+  color: #ffffff;
+}
+
+
+.cta-contact-btn:hover {
+  border-color: #ff7800;
+  color: #ff7800;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .services-hero {
+    padding: 25px 7%;
+  }
+
+  .services-title h1 {
+    font-size: 42px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equipment-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .services-hero {
+    min-height: 270px;
+    padding: 30px 25px;
+  }
+
+  .services-hero-content {
+    width: 100%;
+  }
+
+  .services-title h1 {
+    font-size: 38px;
+  }
+
+  .services-hero-content > p {
+    font-size: 14px;
+  }
+
+  .services-hero-equipment {
+    width: 100%;
+    right: 0;
+    opacity: 0.25;
+  }
+
+
+  .services-section {
+    padding: 0 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .equipment-section {
+    padding: 0 20px;
+  }
+
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+
+  .equipment-heading h2 {
+    font-size: 23px;
+  }
+
+
+  .services-cta {
+    margin: 20px;
+    padding: 20px;
+
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+  }
+
+
+  .cta-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .cta-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .cta-join-btn,
+  .cta-contact-btn {
+    width: 100%;
+  }
+
+}

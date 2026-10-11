@@ -1,0 +1,756 @@
+/* =========================================================
+   CARDIO TRAINING PAGE
+========================================================= */
+
+.cardio-page {
+  min-height: 100vh;
+  background: #050708;
+  color: #ffffff;
+  padding: 110px 32px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.cardio-breadcrumb {
+  max-width: 1450px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 17px;
+}
+
+.cardio-breadcrumb a {
+  color: #ff8a00;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cardio-breadcrumb a:hover {
+  color: #ffad42;
+}
+
+.cardio-breadcrumb span {
+  color: #ffffff;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cardio-hero {
+  max-width: 1450px;
+  min-height: 700px;
+  margin: 0 auto 55px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 128, 0, 0.08),
+      transparent 35%
+    ),
+    #080a0b;
+
+  border: 1px solid #15191b;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.55);
+}
+
+/* HERO CONTENT */
+
+.cardio-hero-content {
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardio-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(52px, 5vw, 82px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.cardio-hero-content h1 span {
+  color: #ff8500;
+}
+
+/* TITLE DECORATION */
+
+.cardio-title-decoration {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 28px 0 30px;
+}
+
+.cardio-title-decoration span {
+  height: 3px;
+  flex: 1;
+  background: #ff8500;
+}
+
+.cardio-title-decoration svg {
+  color: #ff8500;
+  font-size: 48px;
+}
+
+/* DESCRIPTION */
+
+.cardio-hero-content p {
+  max-width: 640px;
+
+  margin: 0 0 38px;
+
+  color: #eeeeee;
+
+  font-size: 22px;
+  line-height: 1.65;
+}
+
+/* HERO BUTTON */
+
+.cardio-main-btn {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 20px 34px;
+
+  border-radius: 7px;
+
+  background: linear-gradient(
+    135deg,
+    #ff8a00,
+    #ff7200
+  );
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 35px rgba(255, 128, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+.cardio-main-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 45px rgba(255, 128, 0, 0.38);
+}
+
+/* HERO IMAGE */
+
+.cardio-hero-image {
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.cardio-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.cardio-hero:hover .cardio-hero-image img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   COMMON SECTION HEADING
+========================================================= */
+
+.cardio-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  max-width: 1450px;
+  margin: 0 auto 18px;
+}
+
+.cardio-section-heading span {
+  flex: 1;
+  height: 2px;
+  background: #ff8500;
+  opacity: 0.7;
+}
+
+.cardio-section-heading h2 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cardio-section-heading strong {
+  color: #ff8500;
+}
+
+.cardio-section-subtitle {
+  max-width: 900px;
+
+  margin: 0 auto 35px;
+
+  text-align: center;
+
+  color: #bfc3c5;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.cardio-benefits-section {
+  max-width: 1450px;
+  margin: 0 auto 65px;
+  padding: 35px;
+
+  background: #080a0b;
+
+  border: 1px solid #1b2023;
+  border-radius: 15px;
+}
+
+.cardio-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.cardio-benefit-card {
+  min-height: 150px;
+
+  padding: 22px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px solid #252b2f;
+  border-radius: 10px;
+
+  background: #07090a;
+
+  transition: 0.3s;
+}
+
+.cardio-benefit-card:hover {
+  border-color: #ff8500;
+  transform: translateY(-5px);
+}
+
+.cardio-benefit-icon {
+  color: #ff8500;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.cardio-benefit-card h3 {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   PROGRAMS
+========================================================= */
+
+.cardio-program-section {
+  max-width: 1450px;
+  margin: 0 auto 65px;
+}
+
+.cardio-program-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.cardio-program-card {
+  min-height: 260px;
+
+  padding: 30px 25px;
+
+  text-align: center;
+
+  background: #080a0b;
+
+  border: 1px solid #202529;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.cardio-program-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff8500;
+  box-shadow: 0 15px 40px rgba(255, 128, 0, 0.08);
+}
+
+.cardio-program-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ff8500;
+  border-radius: 50%;
+
+  color: #ff8500;
+  font-size: 30px;
+}
+
+.cardio-program-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 21px;
+}
+
+.cardio-program-card p {
+  margin: 0;
+
+  color: #c9cdd0;
+
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* =========================================================
+   POPULAR WORKOUTS
+========================================================= */
+
+.cardio-workouts-section {
+  max-width: 1450px;
+  margin: 0 auto 65px;
+
+  padding: 35px;
+
+  background: #080a0b;
+
+  border: 1px solid #1b2023;
+  border-radius: 15px;
+}
+
+.cardio-workout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.cardio-workout-card {
+  min-height: 230px;
+
+  padding: 30px;
+
+  background: #060809;
+
+  border: 1px solid #22282c;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.cardio-workout-card:hover {
+  border-color: #ff8500;
+  transform: translateY(-5px);
+}
+
+.cardio-workout-icon {
+  color: #ff8500;
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.cardio-workout-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+
+.cardio-workout-card p {
+  margin: 0 0 22px;
+
+  color: #bfc3c5;
+
+  line-height: 1.6;
+}
+
+.cardio-workout-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #ff8500;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   BOTTOM SECTION
+========================================================= */
+
+.cardio-bottom-section {
+  max-width: 1450px;
+
+  margin: 0 auto 65px;
+
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+
+  gap: 20px;
+}
+
+/* WORKOUT PLAN */
+
+.cardio-workout-plan,
+.cardio-tips-box {
+  padding: 28px;
+
+  background: #080a0b;
+
+  border: 1px solid #202529;
+  border-radius: 13px;
+}
+
+.cardio-workout-plan h2,
+.cardio-tips-box h2 {
+  margin: 0 0 22px;
+
+  font-size: 25px;
+}
+
+.cardio-workout-plan h2 span,
+.cardio-tips-box h2 span {
+  color: #ff8500;
+}
+
+.cardio-workout-plan h2 small {
+  font-size: 14px;
+  color: #dddddd;
+  font-weight: 400;
+}
+
+/* TABLE */
+
+.cardio-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cardio-table-wrapper table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 14px;
+}
+
+.cardio-table-wrapper th,
+.cardio-table-wrapper td {
+  padding: 13px 10px;
+
+  border: 1px solid #252b2f;
+
+  text-align: center;
+}
+
+.cardio-table-wrapper th {
+  color: #ff8500;
+  background: #0b0d0f;
+}
+
+.cardio-table-wrapper td {
+  color: #eeeeee;
+}
+
+.cardio-table-wrapper tbody tr:hover {
+  background: rgba(255, 133, 0, 0.05);
+}
+
+/* TIPS */
+
+.cardio-tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.cardio-tip-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cardio-tip-item > span {
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ff8500;
+  border-radius: 50%;
+
+  color: #ff8500;
+}
+
+.cardio-tip-item p {
+  margin: 0;
+
+  color: #e4e4e4;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cardio-cta {
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding: 35px 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  background:
+    radial-gradient(
+      circle at right,
+      rgba(255, 133, 0, 0.12),
+      transparent 40%
+    ),
+    #090b0c;
+
+  border: 1px solid #252b2f;
+  border-radius: 15px;
+}
+
+.cardio-cta-icon {
+  width: 75px;
+  height: 75px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ff8500;
+  border-radius: 50%;
+
+  color: #ff8500;
+
+  font-size: 32px;
+}
+
+.cardio-cta-content {
+  flex: 1;
+}
+
+.cardio-cta-content h2 {
+  margin: 0 0 10px;
+
+  font-size: 28px;
+}
+
+.cardio-cta-content h2 span {
+  color: #ff8500;
+}
+
+.cardio-cta-content p {
+  margin: 0;
+
+  max-width: 700px;
+
+  color: #c7cbcd;
+
+  line-height: 1.6;
+}
+
+.cardio-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 17px 25px;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.cardio-cta-button:hover {
+  background: #ff9d28;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .cardio-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardio-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cardio-program-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardio-workout-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .cardio-page {
+    padding: 90px 18px 35px;
+  }
+
+  .cardio-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cardio-hero-content {
+    padding: 45px 28px;
+  }
+
+  .cardio-hero-image {
+    min-height: 450px;
+  }
+
+  .cardio-hero-content h1 {
+    font-size: 52px;
+  }
+
+  .cardio-hero-content p {
+    font-size: 18px;
+  }
+
+  .cardio-bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cardio-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardio-cta-button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardio-section-heading {
+    gap: 10px;
+  }
+
+  .cardio-section-heading span {
+    display: none;
+  }
+
+  .cardio-section-heading h2 {
+    width: 100%;
+    font-size: 25px;
+    white-space: normal;
+  }
+
+  .cardio-benefits-grid,
+  .cardio-program-grid,
+  .cardio-workout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardio-benefits-section,
+  .cardio-workouts-section {
+    padding: 22px;
+  }
+
+  .cardio-hero-content h1 {
+    font-size: 43px;
+  }
+
+  .cardio-title-decoration svg {
+    font-size: 35px;
+  }
+
+  .cardio-main-btn {
+    font-size: 16px;
+    padding: 16px 22px;
+  }
+
+  .cardio-hero-image {
+    min-height: 350px;
+  }
+
+  .cardio-cta {
+    padding: 28px 20px;
+  }
+
+  .cardio-cta-content h2 {
+    font-size: 23px;
+  }
+}

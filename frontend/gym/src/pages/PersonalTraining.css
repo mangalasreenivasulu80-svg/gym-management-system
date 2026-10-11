@@ -1,0 +1,424 @@
+.personal-training-page {
+  min-height: 100vh;
+  background: #050607;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.pt-hero {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 70px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.pt-small-title {
+  color: #ff8a00;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.pt-hero-content h1 {
+  margin: 0;
+  font-size: 64px;
+  line-height: 0.98;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.pt-hero-content h1 span {
+  color: #ff8a00;
+}
+
+.pt-hero-content p {
+  max-width: 570px;
+  margin: 28px 0;
+  color: #d2d2d2;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.pt-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pt-primary-btn,
+.pt-secondary-btn,
+.pt-cta-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 25px;
+  border-radius: 5px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.pt-primary-btn {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.pt-primary-btn:hover {
+  background: #ff9d26;
+  transform: translateY(-2px);
+}
+
+.pt-secondary-btn {
+  border: 1px solid #ff8a00;
+  color: #fff;
+}
+
+.pt-secondary-btn:hover {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.pt-hero-image {
+  height: 480px;
+  border: 1px solid #ff8a00;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #101010;
+}
+
+.pt-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.pt-section-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.pt-section-heading span {
+  color: #ff8a00;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pt-section-heading h2 {
+  margin: 10px 0;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.pt-section-heading p {
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.pt-intro {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.pt-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.pt-feature-card {
+  background: #0c0e10;
+  border: 1px solid #292d31;
+  border-radius: 8px;
+  padding: 30px 22px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.pt-feature-card:hover {
+  border-color: #ff8a00;
+  transform: translateY(-5px);
+}
+
+.pt-feature-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #ff8a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.pt-feature-card h3 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.pt-feature-card p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+.pt-programs {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 70px 40px;
+}
+
+.pt-program-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pt-program-card {
+  background: #0b0d0f;
+  border: 1px solid #292d31;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.pt-program-card:hover {
+  border-color: #ff8a00;
+  transform: translateY(-5px);
+}
+
+.pt-program-card img {
+  width: 100%;
+  height: 210px;
+  display: block;
+  object-fit: cover;
+}
+
+.pt-program-content {
+  padding: 22px;
+}
+
+.pt-program-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.pt-program-content p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.pt-process {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.pt-process-image {
+  height: 500px;
+  border: 1px solid #ff8a00;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pt-process-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pt-process-content > span {
+  color: #ff8a00;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pt-process-content h2 {
+  font-size: 44px;
+  line-height: 1.05;
+  margin: 15px 0 35px;
+}
+
+.pt-process-content h2 strong {
+  color: #ff8a00;
+}
+
+.pt-step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.pt-step-number {
+  min-width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ff8a00;
+  color: #ff8a00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
+.pt-step h3 {
+  margin: 0 0 5px;
+}
+
+.pt-step p {
+  margin: 0;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.pt-cta {
+  margin-top: 40px;
+  padding: 90px 30px;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../assets/images/services/personal-training-booking.jpg");
+
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid #292d31;
+}
+
+.pt-cta span {
+  color: #ff8a00;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pt-cta h2 {
+  margin: 12px 0;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.pt-cta h2 strong {
+  color: #ff8a00;
+}
+
+.pt-cta p {
+  color: #ccc;
+  margin-bottom: 28px;
+}
+
+.pt-cta-btn {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.pt-cta-btn:hover {
+  background: #ff9d26;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .pt-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .pt-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pt-program-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pt-process {
+    grid-template-columns: 1fr;
+  }
+
+  .pt-hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pt-hero {
+    padding: 45px 20px;
+  }
+
+  .pt-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .pt-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .pt-features,
+  .pt-program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pt-intro,
+  .pt-programs,
+  .pt-process {
+    padding: 55px 20px;
+  }
+
+  .pt-process-content h2 {
+    font-size: 35px;
+  }
+
+  .pt-cta h2 {
+    font-size: 34px;
+  }
+}

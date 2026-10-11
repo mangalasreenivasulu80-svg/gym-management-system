@@ -1,0 +1,763 @@
+/* =====================================================
+   YOGA & FITNESS PAGE
+===================================================== */
+
+.yoga-page {
+  min-height: 100vh;
+  background: #050505;
+  color: #ffffff;
+  padding: 30px 32px 50px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.yoga-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 1500px;
+  margin: 0 auto 22px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.yoga-breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff8a00;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.yoga-breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-separator {
+  color: #777;
+}
+
+.yoga-breadcrumb > span:last-child {
+  color: #ffffff;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.yoga-hero {
+  position: relative;
+  max-width: 1500px;
+  min-height: 480px;
+  margin: 0 auto 28px;
+
+  display: grid;
+  grid-template-columns: 1.15fr 1.2fr 0.72fr;
+  align-items: stretch;
+
+  overflow: hidden;
+
+  border: 1px solid #242424;
+  border-radius: 20px;
+
+  background:
+    radial-gradient(
+      circle at 55% 45%,
+      rgba(255, 128, 0, 0.07),
+      transparent 35%
+    ),
+    #070707;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.yoga-hero-content {
+  position: relative;
+  z-index: 3;
+
+  padding: 42px 35px 42px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.yoga-small-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 35px;
+
+  color: #ff8500;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.yoga-small-title span {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.yoga-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 1;
+
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.yoga-hero-content h1 span {
+  color: #ff8500;
+}
+
+.yoga-title-decoration {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin: 28px 0 25px;
+}
+
+.yoga-title-decoration span {
+  display: block;
+  height: 3px;
+  width: 150px;
+  background: #ff8500;
+}
+
+.yoga-title-decoration svg {
+  color: #ff8500;
+  font-size: 36px;
+}
+
+.yoga-hero-content p {
+  max-width: 560px;
+
+  margin: 0 0 28px;
+
+  color: #e5e5e5;
+
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.yoga-book-btn {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 25px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(
+    135deg,
+    #ff8a00,
+    #ff7200
+  );
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  box-shadow: 0 10px 25px rgba(255, 128, 0, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.yoga-book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 128, 0, 0.35);
+}
+
+.yoga-book-btn span {
+  font-size: 23px;
+}
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.yoga-hero-image {
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.yoga-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  filter: brightness(0.85) contrast(1.05);
+
+  transition: transform 0.5s ease;
+}
+
+.yoga-hero:hover .yoga-hero-image img {
+  transform: scale(1.025);
+}
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.yoga-benefits {
+  position: relative;
+  z-index: 3;
+
+  margin: 25px 25px 25px 0;
+  padding: 25px 25px;
+
+  border: 1px solid #3a3a3a;
+  border-radius: 18px;
+
+  background: rgba(7, 7, 7, 0.82);
+
+  backdrop-filter: blur(8px);
+
+  align-self: center;
+}
+
+.yoga-benefits h2 {
+  margin: 0 0 18px;
+
+  color: #ff8500;
+
+  font-size: 27px;
+}
+
+.yoga-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin: 13px 0;
+
+  font-size: 16px;
+  color: #eeeeee;
+}
+
+.yoga-benefit-item svg {
+  flex-shrink: 0;
+
+  color: #ff8500;
+  font-size: 21px;
+}
+
+/* =====================================================
+   MIDDLE SECTION
+===================================================== */
+
+.yoga-middle-section {
+  max-width: 1500px;
+  margin: 0 auto 28px;
+
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 18px;
+}
+
+/* =====================================================
+   COMMON BOX
+===================================================== */
+
+.yoga-program-box,
+.yoga-poses-box,
+.yoga-workout-box,
+.yoga-tips-box {
+  border: 1px solid #343434;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.015),
+      rgba(255, 255, 255, 0)
+    ),
+    #080808;
+
+  overflow: hidden;
+}
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+.yoga-program-box h2,
+.yoga-poses-box h2,
+.yoga-workout-box h2,
+.yoga-tips-box h2 {
+  margin: 0;
+
+  padding: 20px 24px 15px;
+
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.yoga-program-box h2 span,
+.yoga-poses-box h2 span,
+.yoga-workout-box h2 span,
+.yoga-tips-box h2 span {
+  color: #ff8500;
+}
+
+.yoga-workout-box h2 small {
+  color: #cccccc;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* =====================================================
+   PROGRAM GRID
+===================================================== */
+
+.yoga-program-grid {
+  padding: 5px 22px 22px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.yoga-program-card {
+  min-height: 130px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  border: 1px solid #333;
+  border-radius: 15px;
+
+  text-align: center;
+
+  background: #090909;
+
+  transition: 0.3s ease;
+}
+
+.yoga-program-card:hover {
+  border-color: #ff8500;
+  transform: translateY(-3px);
+}
+
+.yoga-program-icon {
+  color: #ff8500;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.yoga-program-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 16px;
+}
+
+.yoga-program-card p {
+  margin: 0;
+
+  color: #cccccc;
+
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* =====================================================
+   POSES
+===================================================== */
+
+.yoga-poses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+
+  padding: 5px 18px 24px;
+}
+
+.yoga-pose-card {
+  text-align: center;
+}
+
+.yoga-pose-image {
+  width: 100%;
+  height: 155px;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+  border: 1px solid #2f2f2f;
+
+  background: #111;
+}
+
+.yoga-pose-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.yoga-pose-card:hover .yoga-pose-image img {
+  transform: scale(1.06);
+}
+
+.yoga-pose-card h3 {
+  margin: 11px 0 2px;
+
+  font-size: 17px;
+}
+
+.yoga-sanskrit {
+  color: #dddddd;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.yoga-pose-card p {
+  margin: 10px 0 0;
+
+  color: #d1d1d1;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* =====================================================
+   BOTTOM SECTION
+===================================================== */
+
+.yoga-bottom-section {
+  max-width: 1500px;
+  margin: 0 auto 28px;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.yoga-table-wrapper {
+  padding: 4px 20px 20px;
+
+  overflow-x: auto;
+}
+
+.yoga-workout-box table {
+  width: 100%;
+  border-collapse: collapse;
+
+  min-width: 650px;
+}
+
+.yoga-workout-box th,
+.yoga-workout-box td {
+  padding: 9px 12px;
+
+  border: 1px solid #303030;
+
+  text-align: center;
+
+  font-size: 15px;
+}
+
+.yoga-workout-box th {
+  color: #ff8500;
+  background: #0d0d0d;
+  font-weight: 600;
+}
+
+.yoga-workout-box td {
+  color: #eeeeee;
+}
+
+.yoga-workout-box tbody tr:hover {
+  background: rgba(255, 133, 0, 0.05);
+}
+
+/* =====================================================
+   TIPS
+===================================================== */
+
+.yoga-tips-list {
+  padding: 8px 25px 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.yoga-tip-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #252525;
+
+  color: #eeeeee;
+
+  font-size: 16px;
+}
+
+.yoga-tip-item:last-child {
+  border-bottom: none;
+}
+
+.yoga-tip-item svg {
+  flex-shrink: 0;
+
+  color: #ff8500;
+  font-size: 22px;
+}
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.yoga-cta {
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding: 28px 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  border: 1px solid #333;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 133, 0, 0.08),
+      rgba(255, 133, 0, 0.015)
+    ),
+    #090909;
+}
+
+.yoga-cta-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  font-size: 30px;
+}
+
+.yoga-cta-content {
+  flex: 1;
+}
+
+.yoga-cta-content h2 {
+  margin: 0 0 8px;
+
+  font-size: 27px;
+}
+
+.yoga-cta-content h2 span {
+  color: #ff8500;
+}
+
+.yoga-cta-content p {
+  margin: 0;
+
+  color: #cccccc;
+
+  font-size: 15px;
+}
+
+.yoga-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 23px;
+
+  border-radius: 8px;
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.yoga-cta-button:hover {
+  background: #ff7200;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .yoga-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .yoga-benefits {
+    display: none;
+  }
+
+  .yoga-middle-section {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-poses-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+
+  .yoga-page {
+    padding: 20px 16px 40px;
+  }
+
+  .yoga-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-hero-image {
+    min-height: 360px;
+    order: -1;
+  }
+
+  .yoga-hero-content {
+    padding: 30px 25px 35px;
+  }
+
+  .yoga-hero-content h1 {
+    font-size: 50px;
+  }
+
+  .yoga-title-decoration span {
+    width: 100px;
+  }
+
+  .yoga-poses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yoga-cta {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .yoga-breadcrumb {
+    font-size: 14px;
+  }
+
+  .yoga-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .yoga-hero-content p {
+    font-size: 17px;
+  }
+
+  .yoga-program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-poses-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .yoga-pose-image {
+    height: 125px;
+  }
+
+  .yoga-pose-card h3 {
+    font-size: 14px;
+  }
+
+  .yoga-sanskrit,
+  .yoga-pose-card p {
+    font-size: 12px;
+  }
+
+  .yoga-program-box h2,
+  .yoga-poses-box h2,
+  .yoga-workout-box h2,
+  .yoga-tips-box h2 {
+    font-size: 23px;
+  }
+
+  .yoga-cta {
+    padding: 22px;
+  }
+
+  .yoga-cta-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .yoga-cta-content h2 {
+    font-size: 21px;
+  }
+
+  .yoga-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

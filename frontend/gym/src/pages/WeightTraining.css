@@ -1,0 +1,427 @@
+.weight-page {
+  min-height: 100vh;
+  background: #050607;
+  color: #fff;
+  padding: 28px 32px 50px;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+
+.weight-breadcrumb {
+  max-width: 1440px;
+  margin: 0 auto 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.weight-breadcrumb a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+
+.weight-breadcrumb span:nth-child(2) {
+  color: #888;
+}
+
+/* Hero */
+
+.weight-hero {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.15fr 1.15fr 0.75fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.weight-hero-text {
+  padding: 35px 10px 20px 10px;
+}
+
+.weight-hero-text h1 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.weight-hero-text h1 span {
+  color: #ff8500;
+}
+
+.orange-line {
+  width: 390px;
+  max-width: 100%;
+  height: 3px;
+  background: #ff8500;
+  margin: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orange-line span {
+  background: #050607;
+  padding: 0 14px;
+  font-size: 22px;
+}
+
+.weight-hero-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #eee;
+  max-width: 570px;
+}
+
+.weight-main-btn,
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff8500;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.weight-main-btn:hover,
+.cta-button:hover {
+  background: #ff9f2d;
+  transform: translateY(-2px);
+}
+
+/* Hero Image */
+
+.weight-hero-image {
+  min-height: 320px;
+  border: 1px solid #222a30;
+  overflow: hidden;
+  background: #0b0d0f;
+}
+
+.weight-hero-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Benefits */
+
+.weight-benefits {
+  border: 1px solid #242a2f;
+  border-radius: 9px;
+  padding: 24px;
+  background: #07090a;
+}
+
+.weight-benefits h2 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.weight-benefits h2 span {
+  color: #ff8500;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.benefit-item span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff8500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff8500;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.benefit-item p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Program Section */
+
+.weight-program-section {
+  max-width: 1440px;
+  margin: 25px auto 0;
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 20px;
+}
+
+.program-area,
+.exercise-area,
+.workout-box,
+.tips-box {
+  border: 1px solid #20272c;
+  border-radius: 9px;
+  padding: 18px;
+  background: #07090a;
+}
+
+.weight-program-section h2,
+.weight-bottom-grid h2 {
+  margin: 0 0 15px;
+  font-size: 23px;
+}
+
+.weight-program-section h2 span,
+.weight-bottom-grid h2 span,
+.weight-booking-cta h2 span {
+  color: #ff8500;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.program-card {
+  border: 1px solid #293138;
+  border-radius: 8px;
+  padding: 20px 12px;
+  text-align: center;
+  min-height: 180px;
+}
+
+.program-card:hover {
+  border-color: #ff8500;
+  box-shadow: 0 0 15px rgba(255, 133, 0, 0.12);
+}
+
+.program-icon {
+  width: 62px;
+  height: 62px;
+  border: 1px solid #ff8500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  font-size: 28px;
+}
+
+.program-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.program-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Exercises */
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.exercise-card {
+  border: 1px solid #252c31;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #0b0d0f;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 85px;
+  display: block;
+  object-fit: cover;
+}
+
+.exercise-name {
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Bottom */
+
+.weight-bottom-grid {
+  max-width: 1440px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 20px;
+}
+
+.workout-box h2 small {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.workout-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.workout-box th,
+.workout-box td {
+  border: 1px solid #252c31;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.workout-box th {
+  color: #ff8500;
+  background: #0d1012;
+}
+
+.workout-box td {
+  color: #eee;
+}
+
+/* Tips */
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.tip-item span {
+  border: 1px solid #ff8500;
+  color: #ff8500;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-item p {
+  margin: 0;
+}
+
+/* CTA */
+
+.weight-booking-cta {
+  max-width: 1440px;
+  margin: 20px auto 0;
+  min-height: 220px;
+  border: 1px solid #20272c;
+  border-radius: 9px;
+  background:
+    radial-gradient(
+      circle at right,
+      rgba(255, 133, 0, 0.08),
+      transparent 35%
+    ),
+    #07090a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.cta-content {
+  max-width: 700px;
+}
+
+.weight-booking-cta h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.weight-booking-cta p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.cta-icon {
+  font-size: 110px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .weight-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weight-benefits {
+    grid-column: span 2;
+  }
+
+  .program-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weight-program-section,
+  .weight-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .weight-page {
+    padding: 20px 14px;
+  }
+
+  .weight-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .weight-benefits {
+    grid-column: auto;
+  }
+
+  .weight-hero-text h1 {
+    font-size: 38px;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weight-booking-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-icon {
+    display: none;
+  }
+}
